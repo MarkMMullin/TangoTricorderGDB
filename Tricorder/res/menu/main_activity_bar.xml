@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+  <item android:id="@+id/networkStatus"
+    android:icon="@drawable/cloud"
+    android:title="@string/networkStatus"
+    android:showAsAction="ifRoom" />
+  <item android:id="@+id/tangoLocalized"
+    android:icon="@drawable/tango"
+    android:title="@string/tangoLocalized"
+    android:showAsAction="ifRoom" />
+  <item android:id="@+id/tangoRecording"
+    android:icon="@drawable/recordingoff"
+    android:title="@string/tangoRecording"
+    android:showAsAction="ifRoom" />
+  <item android:id="@+id/about"
+    android:title="About..."
+    android:showAsAction="never" />
+  <item android:id="@+id/action_settings"
+    android:title="@string/action_settings"
+    android:showAsAction="never" />
+</menu>

@@ -1,0 +1,58 @@
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory android:title="Cloud Services">
+        <EditTextPreference android:defaultValue="http://192.168.0.42/PublicTangoServices" android:key="baseServiceUrl" android:summary="Gives the http/s path to the base of the service api" android:title="Base Cloud Service URL"/>
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Image Processing">
+        <EditTextPreference android:inputType="number" android:defaultValue="80" android:key="jpegQuality" android:summary="Control level of damage to picture or network" android:title="JPEG Quality Percentage"/>
+        </PreferenceCategory>
+                <PreferenceCategory android:title="Capture Display">
+        <EditTextPreference android:inputType="number" android:defaultValue="5" android:key="CapturePointSize" android:summary="Size of Tango surface points rendered in capture scan" android:title="Capture Point Size"/>
+        <EditTextPreference android:inputType="number" android:defaultValue="5" android:key="CaptureDistanceRange" android:summary="Range for near/far colorization in capture scan" android:title="Capture Pseudocolor Range"/>
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Queue Capacities">
+                    <PreferenceScreen
+            android:key="QueueCapacitySettings"
+            android:title="Queue Capacity Detailed Settings"
+            android:persistent="false">
+        <EditTextPreference android:inputType="number" android:defaultValue="15" android:key="locationQueueCap" android:summary="Buffer capacity of location queue" android:title="Location Queue Capacity"/>
+        <EditTextPreference android:inputType="number" android:defaultValue="15" android:key="PoseQueueCap" android:summary="Buffer capacity of pose queue" android:title="Pose Queue Capacity"/>
+        <EditTextPreference android:inputType="number" android:defaultValue="15" android:key="PointsQueueCap" android:summary="Buffer capacity of points queue" android:title="Points Queue Capacity"/>
+        <EditTextPreference android:inputType="number" android:defaultValue="30" android:key="PictureQueueCap" android:summary="Buffer capacity of picture queue" android:title="Picture Queue Capacity"/>
+        <EditTextPreference android:inputType="number" android:defaultValue="90" android:key="PictureCompressorQueueCap" android:summary="Buffer capacity of picture compressor queue" android:title="Picture compressor Capacity"/>
+         <EditTextPreference android:inputType="number" android:defaultValue="50" android:key="PointCompressorQueueCap" android:summary="Buffer capacity of point compressor queue" android:title="Point compressor Capacity"/>
+        </PreferenceScreen>
+         </PreferenceCategory>
+        <PreferenceCategory android:title="Tango Configuration">
+                                <PreferenceScreen
+            android:key="TangoConfigurationSettings"
+            android:title="Tango Configuration Detailed Settings"
+            android:persistent="false">
+        <CheckBoxPreference
+            	android:defaultValue="true"
+                android:key="AutoRecoveryOn"
+                android:title="Auto Recovery"
+                android:summary="enable or disable automatic restoration of pose" />
+        <CheckBoxPreference
+            	android:defaultValue="true"
+                android:key="LearningModeOn"
+                android:title="Learning Mode"
+                android:summary="enable or disable area learning mode" />
+     <CheckBoxPreference
+            	android:defaultValue="true"
+                android:key="MotionTrackingOn"
+                android:title="Motion Tracking"
+                android:summary="enable or disable motion tracking" />
+        <CheckBoxPreference
+            	android:defaultValue="true"
+                android:key="DepthPerceptionOn"
+                android:title="Depth Perception"
+                android:summary="enable or disable depth perception" />
+        <CheckBoxPreference
+            	android:defaultValue="false"
+                android:key="AutosaveADF"
+                android:title="Autosave ADF"
+                android:summary="enable or disable automatic save of ADF" />
+        </PreferenceScreen>
+        </PreferenceCategory>
+
+        </PreferenceScreen>

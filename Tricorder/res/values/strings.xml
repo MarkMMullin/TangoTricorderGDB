@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tango Tricorder</string>
+    <string name="sys_name">Tango Tricorder</string>
+    <string name="menu_name">Tricorder</string>
+    <string name="action_settings">Settings</string>
+    <string name="first_person_cam">First</string>
+    <string name="third_person_cam">Third</string>
+    <string name="top_down_cam">Top</string>
+    <string name="reset">Reset</string>
+    <string name="world">World</string>
+    <string name="cube">Cube</string>
+    <string name="grid">Grid</string>
+    <string name="focal_length">Focal Length</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="up">Up</string>
+    <string name="down">Down</string>
+    <string name="near">Near</string>
+    <string name="far">Far</string>
+    
+    
+    <string-array name="tricorderPanels">
+        <item>Manager</item>
+        <item>Scanner</item>
+        <item>Pumps</item>
+        <item>Clouds</item>
+        <item>Voxels</item>
+        <item>Meshes</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    
+    
+  <string name="networkStatus">Network Service Available</string>
+  <string name="tangoLocalized">Drifting away</string>
+  <string name="tangoRecording">Remembering what I see</string>
+  <string name="action_save">Save</string>
+  <string name="action_label">Add Label</string>
+  <string name="action_play">Play Video</string>
+  <string name="hello_world">Hello world!</string>
+</resources>
+

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ApkDeploymentStatus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ApkFile>C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\Tricorder-debug.apk</ApkFile>
+  <DeviceID>CEIPBP5A0443003047</DeviceID>
+  <ApkTimestamp>2015-10-17T14:54:54.6763522-04:00</ApkTimestamp>
+  <LastDeployment>2015-10-17T14:55:09.2173522-04:00</LastDeployment>
+</ApkDeploymentStatus>

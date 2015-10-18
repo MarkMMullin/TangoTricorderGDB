@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/managerFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/hasSessionData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Session" />
+
+            <CheckBox
+                android:id="@+id/hasLocationData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location" />
+
+            <CheckBox
+                android:id="@+id/hasPoseData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="Pose" />
+
+            <CheckBox
+                android:id="@+id/hasPointData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/hasPoseData"
+                android:text="Points" />
+
+            <CheckBox
+                android:id="@+id/hasImageData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/hasPointData"
+                android:text="Image" />
+
+            <CheckBox
+                android:id="@+id/sessionDurationLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Duration"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/sessionCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/locationCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="35dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/poseCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="35dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/pointsCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="35dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/pictureCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+                android:layout_marginLeft="35dp"/>
+
+             <TextView
+                 android:id="@+id/duration"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="0"
+                android:layout_marginLeft="35dp"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/sessionFilesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/locationFilesize"
+                android:layout_alignBottom="@+id/locationFilesize"
+                android:layout_alignLeft="@+id/sessionCount"
+                android:text="0"
+                android:layout_marginLeft="35dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/locationFilesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/locationCount"
+                android:layout_below="@+id/locationCount"
+                android:text="0"
+                
+                android:layout_marginLeft="35dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/poseFilesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/purgeButton"
+                android:layout_below="@+id/poseCount"
+                android:text="0"
+                
+                android:layout_marginLeft="35dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/pointsFilesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/poseFilesize"
+                android:layout_alignBottom="@+id/poseFilesize"
+                android:layout_toRightOf="@+id/purgeButton"
+                android:text="0"
+                
+                android:layout_marginLeft="35dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/pictureFilesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/pointsFilesize"
+                android:layout_alignBottom="@+id/pointsFilesize"
+                android:layout_alignLeft="@+id/pictureCount"
+                android:text="0"
+                
+                android:layout_marginLeft="35dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" 
+				/>
+
+             <TextView
+                 android:id="@+id/duration4D"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/pointsFilesize"
+                 android:layout_alignBottom="@+id/pointsFilesize"
+                 android:layout_alignLeft="@+id/pictureFilesize"
+                 android:text="0"
+                 
+                android:layout_marginLeft="35dp"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/purgeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:hint="Delete the locally cached data"
+        android:text="Purge" />
+
+    <ProgressBar
+        android:id="@+id/uploadProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tableLayout1" />
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tableLayout1"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@+id/tableLayout1"
+        android:text="Upload" />
+
+    <Button
+        android:id="@+id/exportRAW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/uploadButton"
+        android:layout_alignBottom="@+id/uploadButton"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/uploadButton"
+        android:text="Export RAW" />
+
+    <Button
+        android:id="@+id/exportJSON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/exportRAW"
+        android:layout_alignBottom="@+id/exportRAW"
+        android:layout_toRightOf="@+id/exportRAW"
+        android:text="Export JSON" />
+
+    <Spinner
+        android:id="@+id/adfSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/uploadProgress"
+        android:layout_toRightOf="@+id/isLearningModeOn" />
+
+    <CheckBox
+        android:id="@+id/isLearningModeOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/adfSpinner"
+        android:layout_marginTop="11dp"
+        android:text="ADF Learning Mode" />
+
+</RelativeLayout>

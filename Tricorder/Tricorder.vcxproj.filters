@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{734c2763-c075-488f-a1a6-666c24cd334c}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{973f885c-371c-44cc-b787-0cfd1d1ca6cc}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{d5f81af2-ecc4-4289-bfb6-0217d8748c4f}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidBuild Include="AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="jni\Android.mk" />
+    <None Include="jni\Application.mk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="jni\JNIInterface.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="jni\PointCloudRenderer.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="jni\Tricorder.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="jni\VideoOverlay.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="jni\TangoImage.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="jni\TangoDriver.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="jni\mmm.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="jni\PointCloudRenderer.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="jni\VideoOverlay.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="jni\TangoImage.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="jni\TangoDriver.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="jni\Tricorder.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

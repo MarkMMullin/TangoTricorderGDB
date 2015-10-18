@@ -1,0 +1,6 @@
+<h3>Tango Tricorder by Mark Mullin</h3>
+An application for capturing Tango data and getting it somewhere that it can be processed. <br>
+Version 1.1 Copyright 2015,Mark Mullin,All Rights Reserved<br>
+<a href="https://www.linkedin.com/pub/mark-mullin/0/802/8b9"><h3><b>BIO: https://www.linkedin.com/pub/mark-mullin/0/802/8b9</b></h3></a>
+<br>
+This application is dedicated to my son Kalen - who would very much like a Tango of his own :-)

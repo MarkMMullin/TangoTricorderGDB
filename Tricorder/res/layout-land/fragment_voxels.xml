@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="44dp"
+        android:layout_y="29dp"
+        android:text="This panel will allow for interaction with generated voxelspace - resolution " />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="44dp"
+        android:layout_y="49dp"
+        android:text="and scale is a function of client and cloud processing contribution " />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="44dp"
+        android:layout_y="116dp"
+        android:text="as long as you&apos;re not frightened by a little recursion" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="43dp"
+        android:layout_y="96dp"
+        android:text="Voxel spaces aren&apos;t hard.... " />
+
+</AbsoluteLayout>

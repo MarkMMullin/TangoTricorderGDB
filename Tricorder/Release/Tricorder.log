@@ -1,0 +1,260 @@
+﻿Build started 10/17/2015 12:21:23 PM.
+     1>Project "C:\Dev\tango\vgdb\Tricorder\Tricorder\Tricorder.vcxproj" on node 2 (Rebuild target(s)).
+     1>Rebuild:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\VisualGDB.exe" /rebuild "C:\Dev\tango\vgdb\Tricorder\Tricorder\Tricorder.vcxproj" "/solution:C:\Dev\tango\vgdb\Tricorder\Tricorder.sln" "/config:Release" "/platform:Win32"
+         VisualGDB: Run "C:\EXTSDK\AndroidSDK\ndk-bundle\ndk-build.cmd NDK_DEBUG=0 APP_PLATFORM=android-19 VGDB_VSCONFIG=Release clean" in directory "C:\Dev\tango\vgdb\Tricorder\Tricorder" on local computer
+         [armeabi-v7a] Clean          : TangoWrangler [armeabi-v7a]
+         [armeabi-v7a] Clean          : gnustl_shared [armeabi-v7a]
+         [armeabi-v7a] Clean          : gnustl_static [armeabi-v7a]
+         [armeabi-v7a] Clean          : tango_client_api [armeabi-v7a]
+         VisualGDB: Run "C:\Users\Mark\AppData\Local\Android\ant-1.9.4\bin\ant.bat clean" in directory "C:\Dev\tango\vgdb\Tricorder\Tricorder" on local computer
+         Buildfile: C:\Dev\tango\vgdb\Tricorder\Tricorder\build.xml
+         
+         -check-env:
+          [checkenv] Android SDK Tools Revision 24.4.0
+          [checkenv] Installed at C:\EXTSDK\AndroidSDK
+         
+         -setup:
+              [echo] Project Name: Tricorder
+           [gettype] Project Type: Application
+         
+         -pre-clean:
+         
+         clean:
+            [delete] Deleting directory C:\Dev\tango\vgdb\Tricorder\Tricorder\bin
+            [delete] Deleting directory C:\Dev\tango\vgdb\Tricorder\Tricorder\gen
+         [getlibpath] Library dependencies:
+         [getlibpath] No Libraries
+            [subant] No sub-builds to iterate on
+         
+         BUILD SUCCESSFUL
+         Total time: 0 seconds
+         VisualGDB: Deleting C:\Dev\tango\vgdb\Tricorder\Tricorder\bin and all its contents.
+         VisualGDB: Deleting C:\Dev\tango\vgdb\Tricorder\Tricorder\obj and all its contents.
+     1>EXEC : warning : Could not find the auto-update marker in C:\Dev\tango\vgdb\Tricorder\Tricorder\jni\Android.mk. Source list will not be updated.
+         VisualGDB: Successfully updated debuggable flag in C:\Dev\tango\vgdb\Tricorder\Tricorder\AndroidManifest.xml to false.
+         VisualGDB: Run "C:\EXTSDK\AndroidSDK\ndk-bundle\ndk-build.cmd NDK_DEBUG=0 APP_PLATFORM=android-19 VGDB_VSCONFIG=Release" in directory "C:\Dev\tango\vgdb\Tricorder\Tricorder" on local computer
+         [armeabi-v7a] Compile++ thumb: TangoWrangler <= JNIInterface.cpp
+         [armeabi-v7a] Compile++ thumb: TangoWrangler <= PointCloudRenderer.cpp
+         [armeabi-v7a] Compile++ thumb: TangoWrangler <= TangoDriver.cpp
+         [armeabi-v7a] Compile++ thumb: TangoWrangler <= Tricorder.cpp
+         [armeabi-v7a] Compile++ thumb: TangoWrangler <= VideoOverlay.cpp
+         [armeabi-v7a] Compile++ thumb: TangoWrangler <= TangoImage.cpp
+         [armeabi-v7a] Compile++ thumb: TangoWrangler <= util.cpp
+         [armeabi-v7a] Compile++ thumb: TangoWrangler <= camera.cpp
+         [armeabi-v7a] Compile++ thumb: TangoWrangler <= drawable_object.cpp
+         [armeabi-v7a] Compile++ thumb: TangoWrangler <= transform.cpp
+         [armeabi-v7a] Compile++ thumb: TangoWrangler <= shaders.cpp
+         [armeabi-v7a] SharedLibrary  : libTangoWrangler.so
+         [armeabi-v7a] Install        : libTangoWrangler.so => libs/armeabi-v7a/libTangoWrangler.so
+         VisualGDB: Run "C:\Users\Mark\AppData\Local\Android\ant-1.9.4\bin\ant.bat release" in directory "C:\Dev\tango\vgdb\Tricorder\Tricorder" on local computer
+         Buildfile: C:\Dev\tango\vgdb\Tricorder\Tricorder\build.xml
+         
+         -set-mode-check:
+         
+         -set-release-mode:
+         
+         -release-obfuscation-check:
+              [echo] proguard.config is ${proguard.config}
+         
+         -pre-build:
+         
+         -check-env:
+          [checkenv] Android SDK Tools Revision 24.4.0
+          [checkenv] Installed at C:\EXTSDK\AndroidSDK
+         
+         -setup:
+              [echo] Project Name: Tricorder
+           [gettype] Project Type: Application
+         
+         -build-setup:
+         [getbuildtools] Using latest Build Tools: 23.0.1
+              [echo] Resolving Build Target for Tricorder...
+         [gettarget] Project Target:   Android 4.4.2
+         [gettarget] API level:        19
+              [echo] ----------
+              [echo] Creating output directories if needed...
+             [mkdir] Created dir: C:\Dev\tango\vgdb\Tricorder\Tricorder\bin
+             [mkdir] Created dir: C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res
+             [mkdir] Created dir: C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\rsObj
+             [mkdir] Created dir: C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\rsLibs
+             [mkdir] Created dir: C:\Dev\tango\vgdb\Tricorder\Tricorder\gen
+             [mkdir] Created dir: C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\classes
+             [mkdir] Created dir: C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\dexedLibs
+              [echo] ----------
+              [echo] Resolving Dependencies for Tricorder...
+         [dependency] Library dependencies:
+         [dependency] No Libraries
+         [dependency] 
+         [dependency] ------------------
+              [echo] ----------
+              [echo] Building Libraries with 'release'...
+            [subant] No sub-builds to iterate on
+         
+         -code-gen:
+         [mergemanifest] Merging AndroidManifest files into one.
+         [mergemanifest] Manifest merger disabled. Using project manifest only.
+              [echo] Handling aidl files...
+              [aidl] No AIDL files to compile.
+              [echo] ----------
+              [echo] Handling RenderScript files...
+              [echo] ----------
+              [echo] Handling Resources...
+              [aapt] Generating resource IDs...
+              [echo] ----------
+              [echo] Handling BuildConfig class...
+         [buildconfig] Generating BuildConfig class.
+         
+         -pre-compile:
+         
+         -compile:
+             [javac] Compiling 30 source files to C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\classes
+             [javac] Note: Some input files use or override a deprecated API.
+             [javac] Note: Recompile with -Xlint:deprecation for details.
+         
+         -post-compile:
+         
+         -obfuscate:
+         
+         -dex:
+               [dex] input: C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\classes
+               [dex] input: C:\Dev\tango\vgdb\Tricorder\Tricorder\libs\TangoSDK_Xiaotong_Java.jar
+               [dex] input: C:\Dev\tango\vgdb\Tricorder\Tricorder\libs\TangoUX.jar
+               [dex] input: C:\Dev\tango\vgdb\Tricorder\Tricorder\libs\android-support-v4.jar
+               [dex] Pre-Dexing C:\Dev\tango\vgdb\Tricorder\Tricorder\libs\TangoSDK_Xiaotong_Java.jar -> TangoSDK_Xiaotong_Java-6dbf2527c5613066fd80ee8210d3c841.jar
+               [dex] Pre-Dexing C:\Dev\tango\vgdb\Tricorder\Tricorder\libs\TangoUX.jar -> TangoUX-d1eb2fb3b832164c0b9e597e2a12a350.jar
+               [dex] Pre-Dexing C:\Dev\tango\vgdb\Tricorder\Tricorder\libs\android-support-v4.jar -> android-support-v4-80e1362c6bd3103b18aecb796fd74a91.jar
+               [dex] Converting compiled files and external libraries into C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\classes.dex...
+                [dx] Merged dex A (79 defs/81.2KiB) with dex B (40 defs/57.7KiB). Result is 119 defs/163.8KiB. Took 0.1s
+                [dx] Merged dex A (119 defs/163.8KiB) with dex B (63 defs/63.0KiB). Result is 182 defs/277.2KiB. Took 0.1s
+                [dx] Merged dex A (182 defs/277.2KiB) with dex B (1053 defs/1044.8KiB). Result is 1235 defs/1649.5KiB. Took 0.1s
+         
+         -crunch:
+            [crunch] Crunching PNG Files in source dir: C:\Dev\tango\vgdb\Tricorder\Tricorder\res
+            [crunch] To destination dir: C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-hdpi\action_search.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-hdpi\action_search.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-hdpi\action_search.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-hdpi\drawer_shadow.9.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-hdpi\drawer_shadow.9.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-hdpi\drawer_shadow.9.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-hdpi\ic_drawer.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-hdpi\ic_drawer.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-hdpi\ic_drawer.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-hdpi\ic_launcher.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-hdpi\ic_launcher.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-hdpi\ic_launcher.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-hdpi\tricorder.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-hdpi\tricorder.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-hdpi\tricorder.png: 41% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-ldpi\tricorder.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-ldpi\tricorder.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-ldpi\tricorder.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-mdpi\action_search.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-mdpi\action_search.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-mdpi\action_search.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-mdpi\drawer_shadow.9.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-mdpi\drawer_shadow.9.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-mdpi\drawer_shadow.9.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-mdpi\ic_drawer.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-mdpi\ic_drawer.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-mdpi\ic_drawer.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-mdpi\ic_launcher.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-mdpi\ic_launcher.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-mdpi\ic_launcher.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-mdpi\tricorder.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-mdpi\tricorder.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-mdpi\tricorder.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xhdpi-v4\exception_container_shadow.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\exception_container_shadow.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\exception_container_shadow.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xhdpi-v4\hold_steady_bubble_level_err.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\hold_steady_bubble_level_err.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\hold_steady_bubble_level_err.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xhdpi-v4\hold_steady_bubble_level_ok.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\hold_steady_bubble_level_ok.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\hold_steady_bubble_level_ok.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xhdpi-v4\hold_steady_frame_err.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\hold_steady_frame_err.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\hold_steady_frame_err.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xhdpi-v4\hold_steady_frame_ok.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\hold_steady_frame_ok.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\hold_steady_frame_ok.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xhdpi-v4\hold_steady_trace_left_1.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\hold_steady_trace_left_1.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\hold_steady_trace_left_1.png: 58% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xhdpi-v4\hold_steady_trace_left_2.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\hold_steady_trace_left_2.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\hold_steady_trace_left_2.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xhdpi-v4\hold_steady_trace_right_1.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\hold_steady_trace_right_1.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\hold_steady_trace_right_1.png: 55% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xhdpi-v4\hold_steady_trace_right_2.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\hold_steady_trace_right_2.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\hold_steady_trace_right_2.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xhdpi-v4\ic_exception_i_am_dizzy.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\ic_exception_i_am_dizzy.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\ic_exception_i_am_dizzy.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xhdpi-v4\ic_exception_i_am_lost.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\ic_exception_i_am_lost.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\ic_exception_i_am_lost.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xhdpi-v4\ic_exception_i_cant_see.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\ic_exception_i_cant_see.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\ic_exception_i_cant_see.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xhdpi-v4\ic_exception_system.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\ic_exception_system.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi-v4\ic_exception_system.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xhdpi\action_search.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi\action_search.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi\action_search.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xhdpi\drawer_shadow.9.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi\drawer_shadow.9.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi\drawer_shadow.9.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xhdpi\ic_drawer.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi\ic_drawer.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi\ic_drawer.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xhdpi\tricorder.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi\tricorder.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xhdpi\tricorder.png: 74% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xxhdpi\ic_launcher.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xxhdpi\ic_launcher.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xxhdpi\ic_launcher.png: 52% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xxhdpi\tricorder.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xxhdpi\tricorder.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xxhdpi\tricorder.png: 69% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-xxxhdpi\tricorder.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xxxhdpi\tricorder.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable-xxxhdpi\tricorder.png: 66% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable\cloud.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable\cloud.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable\cloud.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable\network.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable\network.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable\network.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable\pump.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable\pump.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable\pump.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable\pump2.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable\pump2.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable\pump2.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable\recordingoff.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable\recordingoff.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable\recordingoff.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable\recordingon.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable\recordingon.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable\recordingon.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable\tango.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable\tango.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\drawable\tango.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\mipmap-hdpi\ic_launcher.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\mipmap-hdpi\ic_launcher.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\mipmap-hdpi\ic_launcher.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\mipmap-mdpi\ic_launcher.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\mipmap-mdpi\ic_launcher.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\mipmap-mdpi\ic_launcher.png: 0% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\mipmap-xhdpi\ic_launcher.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\mipmap-xhdpi\ic_launcher.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\mipmap-xhdpi\ic_launcher.png: 84% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\mipmap-xxhdpi\ic_launcher.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\mipmap-xxhdpi\ic_launcher.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\mipmap-xxhdpi\ic_launcher.png: 53% size of source)
+            [crunch] Processing image to cache: C:\Dev\tango\vgdb\Tricorder\Tricorder\res\mipmap-xxxhdpi\ic_launcher.png => C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\mipmap-xxxhdpi\ic_launcher.png
+            [crunch]   (processed image to cache entry C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\res\mipmap-xxxhdpi\ic_launcher.png: 78% size of source)
+            [crunch] Crunched 43 PNG files to update cache
+     1>C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-hdpi\ic_drawer.png : libpng warning : iCCP: Not recognizing known sRGB profile that has been edited
+            [crunch] C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-hdpi\ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+     1>C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-mdpi\ic_drawer.png : libpng warning : iCCP: Not recognizing known sRGB profile that has been edited
+            [crunch] C:\Dev\tango\vgdb\Tricorder\Tricorder\res\drawable-mdpi\ic_drawer.png: libpng warning: iCCP: Not recognizing known sRGB profile that has been edited
+         
+         -package-resources:
+              [aapt] Creating full resource package...
+         
+         -package:
+         [apkbuilder] Current build type is different than previous build: forced apkbuilder run.
+         [apkbuilder] Creating Tricorder-release-unsigned.apk for release...
+         
+         -post-package:
+         
+         -release-prompt-for-password:
+         
+         -release-nosign:
+              [echo] No key.store and key.alias properties found in build.properties.
+              [echo] Please sign C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\Tricorder-release-unsigned.apk manually
+              [echo] and run zipalign from the Android SDK tools.
+         [propertyfile] Creating new property file: C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\build.prop
+         [propertyfile] Updating property file: C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\build.prop
+         [propertyfile] Updating property file: C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\build.prop
+         [propertyfile] Updating property file: C:\Dev\tango\vgdb\Tricorder\Tricorder\bin\build.prop
+         
+         -release-sign:
+         
+         -post-build:
+         
+         release:
+         
+         BUILD SUCCESSFUL
+         Total time: 12 seconds
+     1>VisualGDB : warning : Skipping signing and aligning the app as a keystore is not specified. This should be done manually before deploying the app.
+     1>Done Building Project "C:\Dev\tango\vgdb\Tricorder\Tricorder\Tricorder.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:30.97

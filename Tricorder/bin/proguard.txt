@@ -1,0 +1,31 @@
+# view land\res/layout-land/fragment_mesh.xml #generated:6
+# view land\res/layout-land/fragment_scanner.xml #generated:6
+-keep class android.opengl.GLSurfaceView { <init>(...); }
+
+# view res/layout/activity_tricorder.xml #generated:1
+-keep class android.support.v4.widget.DrawerLayout { <init>(...); }
+
+# view res/layout/layout_tango_ux.xml #generated:28
+-keep class com.google.atap.tango.ux.ConnectionLayout { <init>(...); }
+
+# view res/layout/layout_connection.xml #generated:29
+-keep class com.google.atap.tango.ux.ConnectionLayoutProgressBar { <init>(...); }
+
+# view res/layout/layout_tango_ux.xml #generated:21
+-keep class com.google.atap.tango.ux.ExceptionPanelContainer { <init>(...); }
+
+# view res/layout/exception_component.xml #generated:81
+-keep class com.google.atap.tango.ux.ExceptionStatusComponent { <init>(...); }
+
+# view res/layout/layout_connection.xml #generated:24
+-keep class com.google.atap.tango.ux.HoldSteadyComponent { <init>(...); }
+
+# view res/layout/component_hold_steady.xml #generated:53
+-keep class com.google.atap.tango.ux.HoldSteadyFrameView { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class com.ntx24.tricorder.Tricorder { <init>(...); }
+
+# view AndroidManifest.xml #generated:13
+-keep class com.ntx24.tricorder.TricorderApp { <init>(...); }
+

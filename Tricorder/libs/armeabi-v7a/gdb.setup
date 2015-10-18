@@ -1,0 +1,3 @@
+set solib-search-path ./obj/local/armeabi-v7a
+source C:/EXTSDK/AndroidSDK/ndk-bundle/prebuilt/common/gdb/common.setup
+directory C:/EXTSDK/AndroidSDK/ndk-bundle/platforms/android-19/arch-arm/usr/include C:/Dev/tango/c/tango-examples-c-master-xiaotong/tango-gl/include C:/Dev/tango/c/tango-examples-c-master-xiaotong/third-party/glm/ C:/EXTSDK/AndroidSDK/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.8/include C:/EXTSDK/AndroidSDK/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a/include C:/EXTSDK/AndroidSDK/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.8/include/backward /Dev/tango/c/tango-examples-c-master-xiaotong/tango_client_api/include jni
